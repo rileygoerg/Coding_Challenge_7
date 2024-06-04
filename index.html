@@ -3,7 +3,29 @@
     <title>Feedback Form</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Customer Feedback Form</h1>
+    <form id="feedbackForm" action="">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" name="firstName" id="firstName"><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" name="lastName" id="lastName"><br>
+
+        <label for="rating">Please Rate 1-5</label><br>
+        <select name="rating" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+        <label for="feedback">Comments:</label><br>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="displayFeedback"></div>
     <script src="script.js"></script>
 </body>
 </html>
